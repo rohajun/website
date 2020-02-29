@@ -134,6 +134,7 @@ footer span{
 video{
 	width: 60%;
 	margin-bottom: 20px;
+	border: 1px solid #ccc;
 }
 
 /*버튼 스타일*/
