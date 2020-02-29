@@ -4,10 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>index3</title>
+	<title>RohaWebsite</title>
 	<link href="css/component.css" rel="stylesheet" type="text/css"/>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
-    
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>   
     
 </head>
 <body>
@@ -50,10 +49,34 @@
                       <source src="movie.ogg" type="video/ogg">
                       Your browser does not support the video tag.
                     </video>
+                    <br/>
+                    <button class="button" onclick="setPlaySpeed()" type="button"><span>3배속 </span></button>
             </li>            
         </ul>
 	</div>
 </section>
+<script type="text/javascript">
+
+        var myVideo = document.getElementById("myVideo");
+          
+          function getPlaySpeed(){
+            alert("기본 재생 속도 입니다.");
+          }
+
+          function setPlaySpeed(){
+            myVideo.defaultPlaybackRate = 3.0;
+            myVideo.load();
+          }
+
+        function vid_play(){
+          if(myVideo.paused){
+            myVideo.play();
+            dSpeed = 3.0;
+          } else {
+            myVideo.pause();
+          }
+        }
+  </script>
 <footer>
     <<span>Copyright &copy 2020. All Rights Reserved.</span>
 </footer>
