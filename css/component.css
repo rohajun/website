@@ -9,6 +9,13 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'ClickerScript-Regular';
+	src:url('../fonts/clicker-script/ClickerScript-Regular.ttf') format('truetype');
+}
+
 body{
 	margin:0 auto;
 	padding:0;
