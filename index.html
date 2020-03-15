@@ -1,85 +1,356 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RohaWebsite</title>
-	<link href="css/component.css" rel="stylesheet" type="text/css"/>
-   <link href="https://fonts.googleapis.com/css?family=Clicker+Script&display=swap" rel="stylesheet">
-    <!--============Favicons ===============-->
-	<link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon"/>
-	<link rel="apple-touch-icon-precomposed" href="images/favicon.png"/>
- 
-    
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Roha Dev Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- =======================================================
+  * Template Name: DevFolio - v2.0.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-<header>
-	<div class="container demo-2">
-		<div class="content">
-			<div id="large-header" class="large-header">
-				<canvas id="demo-canvas"></canvas>
-					<h1 class="main-title">Roha</h1>
-           	</div><!-- large-header-->
-		</div><!-- content -->
-	</div><!--container -->
-  	<script src="js/demo-2.js"></script>
-    <div>
-    	<h2> 안녕하세요. JAVA 개발자 전로하입니다.</h2> 
-	</div>
-</header>
-<section>
-	<div>
-    	<ul>
-        	<li>
-    			<h3>우리i봄 프로젝트</h3>
-                    <video controls>
-                      <source src="images/movie/Join.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video> 
-                    <br/>
-                    <button class="button" onclick="getPlaySpeed()" type="button"><span>일반속도 </span></button>
-                    <button class="button" onclick="setPlaySpeed()" type="button"><span>3배속 </span></button>   			
-            </li>            
-    	</ul>
-      <p class="line"></p>
-        <ul>
-            <li>
-                <h3>HiAPT 프로젝트</h3>
-                    <video controls>
-                      <source src="images/movie/hiapt.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                    <br/>
-                    <button class="button" onclick="getPlaySpeed()" type="button"><span>일반속도 </span></button>
-                    <button class="button" onclick="setPlaySpeed()" type="button"><span>3배속 </span></button>
-            </li>            
+
+<body id="page-top">
+
+  <!-- ======= Header/ Navbar ======= -->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">RohaFolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">기술 및 사회경험</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">기술</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Project</a>
+          </li>         
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
         </ul>
-	</div>
-</section>
-<script type="text/javascript">
+      </div>
+    </div>
+  </nav>
 
-        var myVideo = document.getElementById("myVideo");
-          
-          function getPlaySpeed(){
-            alert("기본 재생 속도 입니다.");
-          }
+  <!-- ======= Intro Section ======= -->
+  <div id="home" class="intro route bg-image" style="background-image: url(assets/img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">나는 전로하입니다</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Java 개발자, Backend Developer, Web Developer,Frontend Developer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Intro Section -->
 
-          function setPlaySpeed(){
-            myVideo.defaultPlaybackRate = 3.0;
-            myVideo.load();
-          }
+  <main id="main">
 
-        function vid_play(){
-          if(myVideo.paused){
-            myVideo.play();
-          } else {
-            myVideo.pause();
-          }
-        }
-  </script>
-<footer>
-    <<span>Copyright &copy 2020. All Rights Reserved.</span>
-</footer>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/roha.jpg" class="img-fluid rounded b-shadow-a" width="120" alt="로하 증명사진">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>전로하</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Java developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>roha8001@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>010-8001-6812</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>JAVA</span> <span class="pull-right">70%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">65%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Git</span> <span class="pull-right">45%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        나에 대하여
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      안녕하세요. JAVA에 관심이 많은 백엔드 개발자 전로하입니다.
+                    </p>
+                    <p class="lead">
+                      대학에서는 사학과 서양화를 전공하였습니다. 전임강사 및 과외로 초등학생부터 고교생 또는 중년층까지 다양한 
+                      연령층을 가르쳤으며, 담당 과목은 초등 수학, 국어, 중º고교 사회탐구였습니다. 그 외 전기·전자공학과과 실습조교 및 구매담당 조교, 바리스타 경험 등이 있습니다. 
+                    </p>
+                    <p class="lead">
+                      2016년 [NCS]모바일 UI/UX반응형웹디자인취업과정 이수 후 웹디자인 및 퍼플리셔로 2년정도 정규직 및 프리렌서로 활동 하였습니다.
+                    </p>
+                    <p class="lead">
+                      2019년 [NCS]UIUX엔지니어링 및 응용SW엔지니어링 양성과정 이수 후 JAVA 개발자로 이직하였습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                제가 직업훈련을 하면서 만든 팀 프로젝트 및 공부하면서 만든 프로젝트 작업물입니다.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gall="portfolioGallery" class="venobox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">MyBoard</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">개인 프로젝트</span> / <span class="w-date">진행중</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <!-- <span class="ion-ios-play-outline"></span> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+                <div class="work-img">
+                  <img src="assets/img/work-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">우리i봄</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">팀 프로젝트</span> / <span class="w-date">2020년 2월 20일</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-danger video-btn btn-ra ion-ios-play-outline" data-toggle="modal"
+                        data-src="https://www.youtube.com/embed/PRzYJufAROU" data-target="#myModal">
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">              
+                <div class="work-img">
+                  <img src="assets/img/work-3.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">HiAPT</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">팀 프로젝트</span> / <span class="w-date">2019년 11월 08일</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-danger btn-ra ion-ios-play-outline" data-toggle="modal"
+                          data-src="assets/movie/hiapt.mp4" data-target="#myModal">
+                        </button> -->
+                         <button type="button" class="btn btn-danger video-btn btn-ra ion-ios-play-outline" data-toggle="modal"
+                          data-src="https://www.youtube.com/embed/L34RY5RaEcE" data-target="#myModal">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  <!-- ======= Modal Video Section ======= -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div><!--End Modal Video Section-->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="more-info">                     
+                      <ul class="list-ico">
+                        <li><span class="ion-ios-location"></span> 경기도 성남시 수정구 태평동(분당선 태평역)</li>
+                        <li><span class="ion-ios-telephone"></span> 010-8001-6812</li>
+                        <li><span class="ion-email"></span><a href="mailto:roha8001@gmail.com">roha8001@gmail.com</a></li>
+                      </ul>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Roha DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
